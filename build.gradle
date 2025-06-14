@@ -30,6 +30,13 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // Resilience4J
+    implementation("io.github.resilience4j:resilience4j-circuitbreaker:2.3.0")
+
+    // Try-Catch
+    implementation("io.vavr:vavr:0.10.6")
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit5'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
